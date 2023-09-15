@@ -1,0 +1,40 @@
+<Html>
+  <head> 
+  <title>   Registration   </title>
+  </head>
+  <body>
+  <br>
+  <br>
+  
+  <b> Register your details here </b>
+
+  <br>
+  <br>
+  <br>
+  <form action="/register", method="post">
+
+    <label> NAME </label> 
+    <input type="text" name="NAME" size="15"/> <br> <br>
+
+    <label> EMAIL</label> 
+    <input type="text" name="EMAIL" size="15"/> <br> <br>
+    
+    <label> UNAME</label> 
+    <input type="text" name="UNAME" size="15"/> <br> <br>
+
+    <label> PASSWORD </label> 
+    <input type="text" name="PASSWORD" size="15"/> <br> <br>
+    <label for="role"> ROLE </label> 
+      <select id="role" name="role"> <br>
+        <option value="5"> SELECT </option>
+        <option value="1"> STUDENT </option>
+        <option value="2"> FACULTY </option>
+        <option value="0"> NEW ADMIN </option>
+      </select> <br>
+
+    <button class="btn btn-primary" style="margin-top:20px;"> Submit </button>
+
+    <h2 style="margin-top:25px; text-align: justify;"> {{ msg }} </h2>
+</form>
+  </body>  
+    </html>
